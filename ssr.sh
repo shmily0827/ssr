@@ -1,5 +1,7 @@
-#安装ssr
+#安装锐速
 wget -N --no-check-certificate https://raw.githubusercontent.com/91yun/serverspeeder/master/serverspeeder-all.sh && bash serverspeeder-all.sh
+#安装ssr
+wget -N --no-check-certificate https://raw.githubusercontent.com/91yun/shadowsocks_install/master/shadowsocksR.sh && bash shadowsocksR.sh
 iptables -I INPUT -m state --state NEW -m tcp -p tcp --dport 8989 -j ACCEPT
 iptables -I INPUT -m state --state NEW -m udp -p udp --dport 8989 -j ACCEPT
 iptables -I INPUT -m state --state NEW -m udp -p udp --dport 9002 -j ACCEPT
