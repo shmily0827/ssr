@@ -1,0 +1,24 @@
+{
+    "server": "0.0.0.0",
+    "server_ipv6": "::",
+	"port_password":{
+	"137":"1031",
+    "8989":{"protocol":"auth_aes128_sha1", "password":"0925", "obfs":"http_simple","protocol_param": "3" },
+	"9002":{"protocol":"auth_aes128_sha1", "password":"0925", "obfs":"http_simple", "protocol_param": "3"}
+    },
+    "local_address": "127.0.0.1",
+    "local_port": 1081,
+    "timeout": 120,
+    "udp_timeout": 60,
+    "method": "chacha20",
+    "protocol": "auth_sha1_compatible",
+    "protocol_param": "",
+    "obfs": "http_simple_compatible",
+    "obfs_param": "",
+    "dns_ipv6": true,
+    "connect_verbose_info": 0,
+    "redirect": "",
+    "fast_open": false,
+    "workers": 1
+
+}
