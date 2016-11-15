@@ -11,10 +11,12 @@ service iptables save
 service iptables restart
 /etc/init.d/shadowsocks stop
 #优化设置
+
 rm -rf /etc/security/limits.conf
 cd /etc/security/
 wget https://github.com/shmily0827/ssr/edit/master/limits.conf
 ulimit -n 51200
+/sbin/modprobe tcp_hybla
 sysctl net.ipv4.tcp_available_congestion_control
 cp /etc/sysctl.conf /root/
 rm -rf /etc/sysctl.conf
