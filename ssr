@@ -8,4 +8,8 @@ iptables -I INPUT -m state --state NEW -m tcp -p tcp --dport 9003 -j ACCEPT
 iptables -I INPUT -m state --state NEW -m tcp -p tcp --dport 6646 -j ACCEPT
 service iptables save
 service iptables restart
+/etc/init.d/shadowsocks stop
 rm -rf /etc/shadowsocks.json
+cd /etc
+wget https://raw.githubusercontent.com/shmily0827/ssr/master/shadowsocks.json
+/etc/init.d/shadowsocks restart
