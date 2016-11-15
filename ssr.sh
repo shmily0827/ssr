@@ -16,7 +16,7 @@ service iptables restart
 
 rm -rf /etc/security/limits.conf
 cd /etc/security/
-wget https://github.com/shmily0827/ssr/edit/master/limits.conf
+wget https://raw.githubusercontent.com/shmily0827/ssr/master/limits.conf
 ulimit -n 51200
 /sbin/modprobe tcp_hybla
 sysctl net.ipv4.tcp_available_congestion_control
